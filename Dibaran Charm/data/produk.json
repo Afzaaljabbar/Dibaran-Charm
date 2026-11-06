@@ -1,0 +1,48 @@
+{
+  "kategori": [
+    { "id": "catbound", "nama": "Catbound Charm" },
+    { "id": "minglo", "nama": "Minglo Charm" }
+  ],
+  "produk": [
+    {
+      "id": "P001",
+      "kategori": "catbound",
+      "nama": "Catbound Charm - Varian 1",
+      "deskripsi": "Charm bertema kucing yang lucu untuk tas dan gantungan kunci.",
+      "harga": 25000,
+      "gambar": "img/produk/catbound-1.jpg",
+      "stok": true,
+      "unggulan": true
+    },
+    {
+      "id": "P002",
+      "kategori": "catbound",
+      "nama": "Catbound Charm - Varian 2",
+      "deskripsi": "Charm kucing dengan sentuhan warna pastel.",
+      "harga": 25000,
+      "gambar": "img/produk/catbound-2.jpg",
+      "stok": true,
+      "unggulan": true
+    },
+    {
+      "id": "P003",
+      "kategori": "minglo",
+      "nama": "Minglo Charm - Varian 1",
+      "deskripsi": "Charm Minglo untuk mempercantik tas dan aksesori.",
+      "harga": 30000,
+      "gambar": "img/produk/minglo-1.jpg",
+      "stok": true,
+      "unggulan": true
+    },
+    {
+      "id": "P004",
+      "kategori": "minglo",
+      "nama": "Minglo Charm - Varian 2",
+      "deskripsi": "Charm Minglo edisi warna cerah.",
+      "harga": 30000,
+      "gambar": "img/produk/minglo-2.jpg",
+      "stok": false,
+      "unggulan": false
+    }
+  ]
+}

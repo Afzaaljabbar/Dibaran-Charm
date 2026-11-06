@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ - Dibaran Charm</title>
+  <meta name="description" content="Pertanyaan yang sering diajukan tentang pemesanan di Dibaran Charm.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">Dibaran Charm</a>
+    <button class="menu-btn" aria-label="Buka menu">☰</button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="produk.html">Produk</a>
+      <a href="faq.html" class="aktif">FAQ</a>
+      <a href="keranjang.html">🛒 <span class="badge">0</span></a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Pertanyaan yang Sering Diajukan</h1>
+    <input type="search" id="cari-faq" placeholder="Cari pertanyaan...">
+    <div id="daftar-faq"></div>
+    <p>Belum terjawab? <a class="btn btn-wa link-wa" href="#" target="_blank" rel="noopener">Hubungi via WhatsApp</a></p>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Dibaran Charm</strong> - Charm lucu untuk gayamu.</p>
+    <p><a class="link-wa" href="#" target="_blank" rel="noopener">Chat via WhatsApp</a></p>
+    <p>&copy; 2026 Dibaran Charm</p>
+  </footer>
+  <div id="toast" class="toast"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/faq.js"></script>
+</body>
+</html>

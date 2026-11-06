@@ -1,0 +1,153 @@
+:root {
+  --utama: #5b3a6b;
+  --aksen: #e8799f;
+  --latar: #fff8fb;
+  --teks: #2b2b2b;
+  --putih: #ffffff;
+  --wa: #25d366;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+[hidden] { display: none !important; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--latar);
+  color: var(--teks);
+  line-height: 1.6;
+}
+a { color: var(--utama); }
+img { max-width: 100%; display: block; }
+.container { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+h1, h2, h3 { color: var(--utama); margin-bottom: 12px; }
+p { margin-bottom: 10px; }
+ul { margin: 0 0 12px 22px; }
+
+/* ---------- Header ---------- */
+.header {
+  display: flex; justify-content: space-between; align-items: center;
+  background: var(--utama); padding: 12px 20px;
+  position: sticky; top: 0; z-index: 10;
+}
+.logo { color: var(--putih); font-weight: bold; font-size: 1.3rem; text-decoration: none; }
+.menu { display: flex; gap: 18px; align-items: center; }
+.menu a { color: var(--putih); text-decoration: none; }
+.menu a:hover, .menu a.aktif { color: var(--aksen); }
+.badge {
+  background: var(--aksen); color: var(--putih);
+  border-radius: 50%; padding: 1px 7px; font-size: .8rem;
+}
+.menu-btn {
+  display: none; background: none; border: 0;
+  color: var(--putih); font-size: 1.6rem; cursor: pointer;
+}
+
+/* ---------- Tombol ---------- */
+.btn {
+  display: inline-block; background: var(--aksen); color: var(--putih);
+  border: 0; padding: 10px 18px; border-radius: 8px;
+  text-decoration: none; cursor: pointer; font-size: 1rem;
+}
+.btn:hover { opacity: .9; }
+.btn-garis { background: transparent; border: 2px solid var(--utama); color: var(--utama); }
+.btn-wa { background: var(--wa); }
+.btn:disabled { background: #bbb; cursor: not-allowed; }
+
+/* ---------- Hero ---------- */
+.hero {
+  background-image: url("img/produk/hero.jpg")
+  background-size: cover;        
+  background-position: center;  
+  background-repeat: no-repeat; 
+  text-align: center;
+  padding: 100px 20px;
+}
+
+/* ---------- Kotak keunggulan ---------- */
+.fitur { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.fitur div {
+  background: var(--putih); padding: 18px; border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+/* ---------- Grid & kartu produk ---------- */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+.kartu {
+  background: var(--putih); border-radius: 10px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  display: flex; flex-direction: column;
+}
+.kartu img { width: 100%; aspect-ratio: 1; object-fit: cover; background: #eee; }
+.kartu .isi { padding: 12px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.kartu .harga { font-weight: bold; color: var(--utama); }
+.kartu .btn { margin-top: auto; }
+
+/* ---------- Filter ---------- */
+.filter { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+input, select, textarea {
+  padding: 10px; border: 1px solid #ccc; border-radius: 8px;
+  font-size: 1rem; width: 100%; font-family: inherit;
+}
+.filter input { flex: 1; min-width: 200px; }
+.filter select { width: auto; }
+.kosong { text-align: center; padding: 30px; }
+
+/* ---------- Keranjang ---------- */
+.item {
+  display: flex; gap: 12px; align-items: center;
+  background: var(--putih); padding: 10px; border-radius: 10px;
+  margin-bottom: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+.item img { width: 70px; height: 70px; object-fit: cover; border-radius: 8px; background: #eee; }
+.item .info { flex: 1; }
+.jumlah { display: flex; align-items: center; gap: 8px; }
+.jumlah button {
+  width: 30px; height: 30px; border-radius: 6px;
+  border: 1px solid #ccc; background: var(--putih); cursor: pointer;
+}
+.hapus { background: none; border: 0; cursor: pointer; font-size: 1.2rem; }
+.ringkasan { background: var(--putih); padding: 18px; border-radius: 10px; margin-top: 16px; }
+.ringkasan label { display: block; margin: 10px 0 4px; }
+.ringkasan .btn { margin-top: 12px; margin-right: 8px; }
+
+/* ---------- FAQ ---------- */
+#cari-faq { margin-bottom: 12px; }
+details {
+  background: var(--putih); border-radius: 8px; padding: 12px 16px;
+  margin: 10px 0; box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+summary { cursor: pointer; font-weight: bold; color: var(--utama); }
+details p { margin-top: 8px; }
+
+/* ---------- Tentang Kami ---------- */
+.nilai { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin: 12px 0 20px; }
+.nilai div {
+  background: var(--putih); padding: 16px; border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08); text-align: center;
+}
+
+/* ---------- Footer & notifikasi ---------- */
+.footer {
+  background: var(--utama); color: var(--putih);
+  text-align: center; padding: 24px 16px; margin-top: 40px;
+}
+.footer a { color: var(--aksen); }
+.ajakan { text-align: center; }
+.toast {
+  position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+  background: var(--utama); color: var(--putih);
+  padding: 10px 18px; border-radius: 8px;
+  opacity: 0; pointer-events: none; transition: opacity .3s;
+}
+.toast.tampil { opacity: 1; }
+
+/* ---------- Responsif (ponsel) ---------- */
+@media (max-width: 700px) {
+  .menu-btn { display: block; }
+  .menu {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; background: var(--utama); padding: 14px;
+  }
+  .menu.buka { display: flex; }
+  .item { flex-wrap: wrap; }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keranjang - Dibaran Charm</title>
+  <meta name="description" content="Keranjang belanja Dibaran Charm. Kirim pesanan lewat WhatsApp.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">Dibaran Charm</a>
+    <button class="menu-btn" aria-label="Buka menu">☰</button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="produk.html">Produk</a>
+      <a href="faq.html">FAQ</a>
+      <a href="keranjang.html" class="aktif">🛒 <span class="badge">0</span></a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Keranjang Belanja</h1>
+    <div id="isi-keranjang"></div>
+
+    <div id="ringkasan" class="ringkasan" hidden>
+      <h2>Ringkasan</h2>
+      <p>Total: <strong id="total">Rp0</strong></p>
+      <label for="nama">Nama Anda</label>
+      <input type="text" id="nama" placeholder="Nama pembeli">
+      <label for="catatan">Catatan</label>
+      <textarea id="catatan" rows="3" placeholder="Contoh: alamat lengkap, pilihan varian"></textarea>
+      <button class="btn btn-wa" id="btn-pesan">Pesan via WhatsApp</button>
+      <button class="btn btn-garis" id="btn-kosongkan">Kosongkan Keranjang</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Dibaran Charm</strong> - Charm lucu untuk gayamu.</p>
+    <p><a class="link-wa" href="#" target="_blank" rel="noopener">Chat via WhatsApp</a></p>
+    <p>&copy; 2026 Dibaran Charm</p>
+  </footer>
+  <div id="toast" class="toast"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/keranjang.js"></script>
+</body>
+</html>
